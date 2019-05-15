@@ -1,0 +1,21 @@
+<!-- <app-header></app-header> -->
+<div class="container">
+  <br>
+  <div class="row">
+    
+    <div class="col-sm"  *ngFor="let item of ProductList" style="margin-bottom: 10px">
+        <div class="card" style="width: 18rem;">
+            
+            <div class="card-body">
+              <h5 class="card-title">{{item.Productname}}</h5>
+              <p class="card-text">Category Name : {{item.Categorname}}</p>
+              <p class="card-text">Price : {{item.price | currency:'USD'}}</p>
+              <a href="javascript:void(0)" (click)="additem(item)" class="btn btn-primary">Add item</a>
+            </div>
+          </div>
+    </div>
+    
+  </div>
+    
+     
+</div>
